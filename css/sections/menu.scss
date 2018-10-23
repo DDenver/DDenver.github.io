@@ -1,0 +1,80 @@
+.menu{
+    background: url(../img/bg/menu.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.white{
+	color: #fff;
+	text-align: left;
+	position: relative;
+	top: 109px;
+	left: 90px;
+}
+
+.menu-acco{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	@extend %clearfix;
+}
+
+.menu-acco__item{
+	float: left;
+	height: 100%;
+	@extend %clearfix;
+	&_active{
+		.menu-acco__trigger-text{
+			color: $yellow;
+		}
+		
+		// .menu-acco__content{
+		// 	width: 550px;
+		// }	
+	}
+}
+
+.menu-acco__trigger{
+	height: 100%;
+	display: block;
+	width: 80px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	float: left;
+}
+
+.menu-acco__trigger-text{
+	font-family: 'gagalin', Arial, sans-serif;
+	font-size: 40px;
+	position: absolute;
+	color: #fff;
+	top: 50%;
+	height: 80px;
+	margin-top: -40px;
+	white-space: nowrap;
+	width: 650px;
+	left: 50%;
+	margin-left: -312px;
+	transform: rotate(-90deg);
+	text-align: center;
+}
+
+.menu-acco__content{
+	background: rgba(47, 50, 52, 0.93);
+	width: 0;
+	float: left;
+	height: 100%;
+	color: #fff;
+	font-weight: 300;
+	overflow: hidden;
+}
+
+
+.menu-acco__text{
+	width: 475px;
+	margin: 65px 35px 0 35px;
+}
+

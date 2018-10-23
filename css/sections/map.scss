@@ -1,0 +1,84 @@
+.map{
+    background-color: #fff;
+}
+
+.yandex-map{
+	height: calc(100% - 60px);
+}
+
+footer{
+	background: url(../img/bg/footer.jpg) center bottom no-repeat;
+  height: 60px;
+  background-size: cover;
+  padding-top: 10px;
+	.container{
+		
+		@extend %clearfix;
+	}
+}
+
+.footer__left{
+	float: left;
+	width: 50%;
+	.footer__adres{ 
+		color: #fff;
+	}
+	.footer__phone{
+		color: $red;
+		font-weight: 600;
+	}
+}
+
+.footer__right{
+	float: right;
+	width: 50%;
+	margin-top: 12px;
+	@extend %clearfix;
+	.socials{
+		float: right;
+	}
+}
+
+.socials__item{
+	display: inline-block;
+	.socials__link{
+		background-image:url(../img/icons/icons.svg);
+		background-repeat: no-repeat;
+		margin-left:  10px;
+		margin-right:  10px;
+		display: inline-block;
+		transition: .3s;
+		opacity: 0.6;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+}
+
+
+.icon-fb{
+	background-position:0 0;
+	width: 20px;
+	height: 20px;
+}
+.icon-inst{
+	background-position:0 -20px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-twitter{
+	background-position:0 -40px;
+	width: 20px;
+	height: 17px;
+	margin-bottom: 1px;
+}
+
+.icon-vk{
+	background-position:0 -57px;
+	width: 23px;
+	height: 13px;
+	margin-bottom: 3px;
+}

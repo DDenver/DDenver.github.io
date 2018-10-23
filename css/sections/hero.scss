@@ -1,0 +1,159 @@
+.hero{
+    background: url(../img/bg/hero.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+  .container{
+    position: static;
+    @extend %clearfix;
+  }
+}
+
+.header{
+	 padding-top: 12px;
+ }
+ 
+ .hero__container{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	.container{
+		@extend %clearfix;
+	}
+ }
+ 
+.hero__content{
+	@extend %clearfix;
+}
+
+ .hader__logo{
+	float: left;
+	width: 32%;	
+ }
+ 
+.header__logo-link{
+	width: 98px;
+	height: 74px;
+	background-position: center; 
+	background-repeat: no-repeat;
+	display: inline-block;
+} 
+
+
+ 
+ .hader__menu{
+	float: right;
+	width: 68%;
+	padding-top: 13px;	
+ }
+ 
+ .nav{
+	width: 82%;
+	vertical-align: middle;
+	display: inline-block;
+ }
+ 
+.menu__items{
+	width: 100%;
+	@extend %clearfix;
+} 
+
+.menu__item{
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+
+.menu__link{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.menu__item:after{
+	content: "";
+	display: inline-block;
+	margin-left: 15px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-bottom: 3px;
+}
+
+.menu__item:last-child{
+	margin-right: 0;
+}
+
+.menu__item:last-child:after{ 
+	display: none;
+} 
+.menu__link:hover{
+	text-decoration: underline;	
+}
+ 
+ .order__link{
+	width: 15%;
+	margin-left: 2%;
+	vertical-align: middle; 
+	display: inline-block;
+	padding: 7px 14px;
+	background-color: #e45028;
+	font-weight: 300;
+ }
+ 
+.hero__left{
+	width: 50%;
+	float:	left;
+}
+
+.hero__right{
+	width: 50%;
+	float:	left;
+	padding-top: 147px;
+	.section__title{
+		margin-bottom: 15px
+	}
+}  
+
+.title{
+	margin-bottom: 15px;
+}
+
+.hero__img{
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%); 
+} 
+
+.hero__name{
+	font-family: 'lifehack', Arial, sans-serif;
+	font-size: 64px;
+	color: #fff;
+	text-transform: lowercase;
+	line-height: 1em;
+}
+ 
+.arrow__down{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	display: inline-block;
+	-webkit-transition: .3s;
+	transition: .3s;
+	background-size: contain; 
+	background-repeat: no-repeat;
+} 
+
+.arrow__down:hover{
+	height: 60px;
+	width: 35px;
+}
+

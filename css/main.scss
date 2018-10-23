@@ -1,0 +1,22 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+//setup
+@import "setup/normalize";
+@import "setup/layout";
+@import "setup/fonts";
+@import "media/window";
+
+
+//blocks
+@import "sections/hero";
+@import "sections/best";
+@import "sections/burgers";
+@import "sections/team";
+@import "sections/menu";
+@import "sections/reviews";
+@import "sections/order";
+@import "sections/map";

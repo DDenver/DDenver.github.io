@@ -1,0 +1,41 @@
+
+
+.best{
+    background: url(../img/bg/best.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    .container{
+    	top: 50%;
+    	transform: translateY(-50%);
+    }
+}
+
+.section__title{
+	text-align: center;
+	font: 72px/1 'gagalin', Arial, sans-serif;
+	margin-bottom: 88px;
+}
+
+.best__title{
+	text-align: center;
+	font: 24px/1.16 'lifehack', Arial, sans-serif;
+	font-weight: 500;
+	margin: 34px 0 25px 0;
+}
+
+.best__item{
+	display: inline-block;
+	width: 290px;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+.best__icon{
+	width: 97px;
+	height: 89px;
+	margin: 0 auto;
+}
+
+.best__text{
+	font-weight: 300;
+}

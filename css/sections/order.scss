@@ -1,0 +1,166 @@
+.order{
+    background: url(../img/bg/order.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    .container{
+    	top: 50%;
+			transform: translateY(-50%);
+    }
+}
+
+
+.order__form{
+	@extend %clearfix;
+}
+
+.order .yellow{
+	 text-align: center;
+ }
+ 
+ .lable__neme, .form__line{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+ }
+ 
+ .form__input{
+ 		height: 37px;
+ 		margin-top: 5px;
+ 		font-size: 14px;
+		padding: 5px 10px;
+		border: 1px solid #d1cfcb;
+		border-radius: 5px;
+	  width: 100%;
+ }
+ 
+ .form__left-side{
+	width: 50%;
+	float: left;
+
+	.form__line{
+		display: block;
+		margin-bottom: 20px;
+		margin-right: 20px;
+		float: left;
+		width: calc(100% - 10px); /* отнять 20px*/
+	} 
+	.medium{
+		width: calc(50% - 15px); /* 50% отнять 20px*/
+	}
+
+	.small{
+		width: calc(25% - 17.5px); /* отнять 20px*/
+	}
+
+	.align{
+ 		margin-right: 10px;
+ 	}
+}
+ 
+ .form__right-side{
+	width: 50%;
+	float: right;
+	.form__line{
+		margin-left: 10px;
+		margin-bottom: 19px;
+		.button{
+			background-color: $red;
+			border-width: 0;
+		}
+	}
+	.order__choice{
+		margin-right: 20px;
+	}
+ }
+
+.form__comment{
+	padding: 5px 10px;
+	width: 100%;
+	height: 121px;
+	border: 1px solid #d1cfcb;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+
+
+.order__radio-fake, .order__radio-title{
+	display: inline-block;
+	position: relative;
+}
+
+.order__radio, .order__checkbox{
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	display: none;
+}
+
+.order__radio-fake{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #fff;
+	&:after{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0px;
+		height: 0px;
+		background-color: $red;
+		border-radius: 50%;
+		transition: 0.3s;
+	}
+}
+
+.order__radio:checked{
+	& +.order__radio-fake{
+		&:after{
+			width: 8px;
+			height: 8px;
+		}
+	}
+}
+
+.order__choice-checkbox{
+	.order__radio-fake{
+		border-radius: 0;
+		&:after{
+			background: transparent;
+		}
+	}
+}
+
+
+.order__checkbox:checked{
+	& +.order__radio-fake{
+		&:after{
+			width: 9px;
+			height: 9px;
+			background: url("../img/icons/check.svg") 50% no-repeat transparent;
+			background-size: contain;
+		}
+	}
+}
+
+
+.order__radio-title{
+	margin-left: 10px;
+	position: relative;
+	top: -4px;
+}
+
+
+.form__button{
+	text-transform: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'ubuntu', Arial, sans-serif;
+  padding: 13px 15px 10px 15px;
+  background-color: rgba(0,0,0,0);
+  border: 0;
+}
